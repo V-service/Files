@@ -418,3 +418,7 @@ a.discord-button {
     transition: background-color 0.3s;
     font-size: 14px;
 }
+
+.my-container {
+    text-align: center;
+}
