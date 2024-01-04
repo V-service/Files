@@ -1,0 +1,424 @@
+.html {
+    user-select: none;
+}
+
+body {
+    background: url('https://media.discordapp.net/attachments/1192567859709227094/1192591240928186418/background.png?ex=65a9a225&is=65972d25&hm=0d6f4514fa77b7874768c07b22499897cb829ca9e3de88e544e3b06311e9e281&=&format=webp&quality=lossless&width=1116&height=628') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.sidebar,
+.bg-gray-800,
+.bg-cover {
+    background-color: transparent;
+}
+
+.text-white,
+.hover\:text-gray-300:hover {
+    color: #ffffff;
+}
+
+.text-gray-300 {
+    color: #cccccc;
+}
+
+.button-collab {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 114, 255, 0.4);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+    .button-collab:hover {
+        box-shadow: 0 15px 25px rgba(0, 114, 255, 0.6);
+        transform: translateY(-3px);
+    }
+
+    .button-collab:active {
+        box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+        transform: translateY(1px);
+    }
+
+    .button-collab span.icon {
+        margin-right: 8px;
+        max-width: 10px;
+    }
+
+section.gradient-bg {
+    position: relative;
+    z-index: 0;
+}
+
+    section.gradient-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background: linear-gradient(to bottom right, #29313f, #354053);
+    }
+
+p.text-gray-300.max-w-lg.animate__animated.animate__fadeIn.animate__duration-700 {
+    margin-bottom: 2rem;
+}
+
+a.bg-blue-600.text-white.hover\:bg-blue-700.py-2.px-6.rounded {
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .landing-page {
+        margin-top: -50px;
+    }
+}
+
+a.signin-button {
+    align-content: center;
+    background: linear-gradient(90deg, #4062da, #1131a2);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 16px 16px;
+    padding-bottom: 3.5%;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: small;
+    text-decoration: none;
+    transition: color 0.3s;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.discord-button .icon {
+    padding: 12px 15px 9px 20px;
+}
+
+.discord-button .text {
+    padding: 12px 20px 10px 10px;
+}
+
+a.discord-button {
+    align-content: center;
+    background: linear-gradient(90deg, #5865f2, #5865f2);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
+    a.discord-button:hover {
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+        transform: translateY(-3px);
+    }
+
+    a.discord-button:active {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        transform: translateY(1px);
+    }
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 3%;
+    background-color: rgba(31, 36, 49, 0.2);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    margin-left: -2%;
+}
+
+.top-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+    .menu-item.account-button {
+        padding-right: 5px;
+    }
+
+    .menu-item:hover {
+        color: white;
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+.main-content {
+    padding: 50px 5%;
+}
+
+.content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1010;
+    background: transparent;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-size: x-large;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+    display: block;
+    width: 240px;
+    background-color: rgba(14, 18, 29, 0.9);
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.tab {
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+    .tab a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .tab:hover {
+        background-color: #2d3748;
+    }
+
+    .tab.active {
+        background-color: #4a5568;
+    }
+
+.menu-btn:hover {
+    background: transparent;
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 1010;
+        background: transparent;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        padding: 6px 6px;
+        font-size: 16px;
+        cursor: pointer;
+        font-size: 30px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+    line-height: 40px;
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+    transition: transform 0.2s;
+}
+
+.dropdown-toggle:hover {
+    color: white;
+}
+
+.dropdown-toggle.active {
+    color: white;
+}
+
+    .dropdown-toggle.active .dropdown-arrow {
+        transform: rotate(180deg);
+    }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(45, 55, 72, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 160px;
+}
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px 16px;
+        text-decoration: none;
+        color: #fff;
+        transition: background-color 0.3s;
+    }
+
+        .dropdown-menu a:hover {
+            background-color: #4a5568;
+        }
+
+.dropdown-container {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(45, 55, 72, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.my-container {
+    text-align: center;
+}
